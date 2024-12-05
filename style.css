@@ -1,0 +1,472 @@
+@keyframes hoverbilet{
+    from{
+        background-color:rgba(237, 237, 237,0.5);
+        height:500px;
+        width:370px;
+        left:0px;
+        top:0px;
+        margin-bottom:0px;
+        margin-right:0px;
+        color:black;
+    }
+    to{
+        background-color:#baffb0;
+        height:540px;
+        width:410px;
+        left:-20px;
+        margin-bottom:-40px;
+        top:-20px;
+        margin-right:-40px;
+        color:#3658d1;
+        
+    }
+}
+@keyframes hoverbiletreverse{
+    from{
+        background-color:#baffb0;
+        height:540px;
+        width:410px;
+        margin-bottom:-40px;
+        left:-20px;
+        top:-20px;
+        margin-right:-40px;
+        color:#3658d1;
+    }
+    to{
+        background-color:rgba(237, 237, 237,0.5);
+        height:500px;
+        width:370px;
+        left:0px;
+        color:black;
+        margin-bottom:0px;
+        top:0px;
+        margin-right:0px;
+    }
+}
+body{background: radial-gradient(ellipse at top, #7895ff 10%, transparent),
+            radial-gradient(ellipse at bottom, white 50%, transparent);
+    font-family: "Google Sans";
+    background-color:white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 0px;
+    margin:0px;
+}
+a:visited{
+    color:black;
+}
+#textheadermain{
+    display:block;
+    text-align:center;
+    font-weight: 1000;
+    font-size:45px;
+    /*background-image:radial-gradient(ellipse at center, #03C04A 40%, transparent),
+            radial-gradient(ellipse at center, white 50%, transparent);*/
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:#3658d1;
+
+}
+#headermain{
+    display:inherit;
+    position:fixed;
+    width:100%;
+    z-index:999;
+    background-image:radial-gradient(ellipse at top, white 10%, transparent);
+    margin:0px 0px 0px 0px;
+    padding:0;
+    backdrop-filter:blur(100px);
+}
+.biletsel{
+    display:inline-block;
+    position:relative;
+    animation: hoverbiletreverse 0.5s;
+    margin-left:80px;
+    margin-top:120px;
+    z-index:2;
+    border-radius:50px;
+    background-color:rgba(237, 237, 237,0.5);
+    backdrop-filter:blur(30px);
+    height:500px;
+    width:370px;
+}
+.textbil{
+    position:absolute;
+    text-align:left;
+    font-style:italic;
+    top:27%;
+    left:3%;
+    line-height:0.3;
+    font-size:28px;
+    font-weight:300;
+}
+.biletsel:hover{
+    z-index:50;
+    animation: hoverbilet 0.5s;
+    background-color:#baffb0;
+    height:540px;
+    width:410px;
+    top:-20px;
+    left:-20px;
+    margin-right:-40px;
+    color:#3658d1;
+    margin-bottom:-40px;
+}
+div#o25{
+    margin-bottom:100px;
+}
+
+/*div#t2{
+    top:100px;
+}
+div#t3{
+    top:110px;
+}
+div#t4{
+    top:80px;
+}
+div#t5{
+    top:105px;
+}
+div#t6{
+    top:80px;
+}
+div#t7{
+    top:100px;
+}
+div#t8{
+    top:100px;
+}
+div#t9{
+    top:65px;
+}
+div#t10{
+    top:80px;
+}
+div#t11{
+    top:100px;
+}
+div#t12{
+    top:110px;
+}
+div#t13{
+    top:100px;
+}
+div#t14{
+    top:120px;
+}
+div#t15{
+    top:115px;
+}
+div#t16{
+    top:70px;
+}
+div#t17{
+    top:80px;
+}
+div#t18{
+    top:80px;
+}
+div#t19{
+    top:80px;
+}
+div#t20{
+    top:80px;
+}
+div#t21{
+    top:80px;
+}
+div#t22{
+    top:120px;
+}
+div#t23{
+       left:20px;    
+    top:40px;
+    font-size:27px;
+
+}
+div#t24{
+    top:90px;
+}
+div#t25{
+    top:80px;
+}
+*/
+
+
+
+
+
+
+.textbil{
+    top:30px;
+    left:20px;
+}
+.curved{
+    font-weight:600;
+}
+
+#bilname{
+position:relative;
+top:80px;
+margin-left:80px;
+font-size:40px;
+font-style:italic;
+font-weight:550;
+color:#1f3eab;
+margin-bottom:-40px;
+margin-right:20px;
+text-align:center;
+}
+
+
+
+
+
+
+
+
+
+.square{
+    display:inline-block;
+    position:relative;
+    height:300px;
+    width:800px;
+    margin:50px;
+    margin-top:150px;
+    margin-bottom:-100px;
+    margin-left:100px;
+    margin-right:-50px;
+    background-color:black;
+    border-radius:100px;
+}
+.square:hover{
+    cursor:pointer;
+}
+div#s1{
+    background-image:url(https://historyrussia.org/images/22062020_1.jpg);
+}
+#s1cover{
+    position:relative;
+    height:100%;
+    width:100%;
+    border-radius:100px;
+    background-color:rgba(75, 54, 32,0.8);
+}
+
+#good{
+    position:absolute;
+    display:block;
+    text-align:center;
+    top:42%;
+    width:100%;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+}
+#good1{
+    position:absolute;
+    display:block;
+    top:42%;
+    text-align:center;
+        width:100%;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+}
+div#s2{
+    background-image:url(https://sun9-16.userapi.com/impf/XvWKnjyMROhOiMNBGI5RwHd5m914XUIzyZRtfw/q04kPJCJXiI.jpg?size=756x726&quality=96&sign=9fca2969822c1faa74711bef8fae09fa&type=album);
+}
+#s2cover{
+    position:relative;
+    height:100%;
+    width:100%;
+    border-radius:100px;
+    background-color:rgba(145, 0, 0, 0.7);
+}
+#good2{
+    position:absolute;
+    display:block;
+    top:42%;
+    text-align:center;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+    width:100%;
+}
+div#s3{
+    background-image:url(https://zviazda.by/sites/default/files/field/image/3-12_kopiya_2.jpg);
+}
+#s3cover{
+    position:relative;
+    height:100%;
+    width:100%;
+    border-radius:100px;
+    background-color:rgba(0, 92, 26, 0.7);
+}
+#good3{
+    position:absolute;
+    display:block;
+    top:42%;
+    text-align:center;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+    width:100%;
+}
+div#s4{
+    background-image:url(https://zviazda.by/sites/default/files/field/image/ayo9st4l1la.jpg);
+}
+#s4cover{
+    position:relative;
+    height:100%;
+    width:100%;
+    border-radius:100px;
+    background-color:rgba(64, 64, 64, 0.7);
+}
+
+#overlas1{
+    opacity:0;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:93%;
+    margin-top:60px;
+    z-index:999;
+    backdrop-filter:blur(15px);
+}
+#content19_1{
+    display:block;
+    opacity:1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:91%;
+    height:87%;
+    margin-left:2%;
+    font-size:25px;
+    background-color:rgb(180, 159, 137);
+    border-radius:80px;
+    padding:50px;
+}
+.close{
+    font-size:55px;
+    color:lightgray;
+    position:absolute;
+    right:70px;
+    top:15px;
+    z-index:999;
+}
+.close:hover{
+    cursor:pointer;
+    color:white;
+}
+span.bilnameinsq{
+    text-shadow:1px 1px 3px black;
+    font-weight:550;
+    color:white;
+    font-style:italic;
+    font-size:35px;
+}
+
+
+div.popup{
+    position:absolute;
+    height:200px;
+    width:400px;
+    margin-top:30px;
+    margin-left:10px;
+    background-color:rgb(255, 244, 191);
+    display:none;
+    z-index:10000;
+    border-radius:5px 30px 30px 30px;
+    padding:10px;
+}
+
+.list1{
+    margin:2px;
+    margin-left:3ch;
+}
+
+p.ppopup{
+margin-top:5px;}
+
+
+#xbarbarossa{
+    height:130px;
+}
+#photo1{
+    height:65%;
+    width:35%;
+    margin-left:10px;
+    margin-top:80px;
+    float:right;
+    border-radius:40px;
+    background-position:center center;
+    background-size:cover;
+    background-image:url(https://avatars.dzeninfra.ru/get-zen_doc/5233119/pub_63f25fd53398503757bae69e_63f2600888fbda4f33e4f465/scale_1200)
+}
+
+
+#overlas2{
+    opacity:0;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:93%;
+    margin-top:60px;
+    z-index:999;
+    backdrop-filter:blur(15px);
+}
+#content19_2{
+    display:block;
+    opacity:1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:91%;
+    height:87%;
+    margin-left:2%;
+    font-size:25px;
+    background-color:rgb(181, 132, 132);
+    border-radius:80px;
+    padding:50px;
+}
+#xobor{
+    height:310px;
+    width:600px;
+}
+#xpodviglet{
+    width:550px;
+    height:280px;
+}
+#xoborminska{
+    width:550px;
+    height:290px;
+}
+
+#xobormogileva{
+    width:550px;
+    height:250px;
+}
+#xobororshi{
+    width:550px;
+    height:250px;
+}
+
+#photo2{
+    height:65%;
+    width:35%;
+    margin-left:10px;
+    margin-top:80px;
+    float:right;
+    border-radius:40px;
+    background-position:top center;
+    background-size:cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasXB52rvGNqYDHUL5u2-dqiHlhPv5dMxUfQ&s);
+}
