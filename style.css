@@ -470,3 +470,241 @@ margin-top:5px;}
     background-size:cover;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasXB52rvGNqYDHUL5u2-dqiHlhPv5dMxUfQ&s);
 }
+
+#b1_1{
+    background-color:rgba(237, 237, 237,0.5);
+}
+#b1_1cover{
+    position:relative;
+    height:100%;
+    width:100%;
+    border-radius:100px;
+}
+
+#textb1_1{
+    position:absolute;
+    display:block;
+    text-align:center;
+    top:42%;
+    width:100%;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+}
+
+#b1_2{
+    background-color:rgba(237, 237, 237,0.5);
+}
+#b1_2cover{
+
+}
+
+#textb1_2{
+    position:absolute;
+    display:block;
+    text-align:center;
+    top:42%;
+    width:100%;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+}
+#b1_3{
+    background-color:rgba(237, 237, 237,0.5);
+}
+#b1_3cover{
+
+}
+
+#textb1_3{
+    position:absolute;
+    display:block;
+    text-align:center;
+    top:42%;
+    width:100%;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+}
+#b1_4{
+    background-color:rgba(237, 237, 237,0.5);
+}
+#b1_4cover{
+
+}
+
+#textb1_4{
+    position:absolute;
+    display:block;
+    text-align:center;
+    top:42%;
+    width:100%;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+}
+#b1_5{
+    background-color:rgba(237, 237, 237,0.5);
+}
+#b1_5cover{
+
+}
+
+#textb1_5{
+    position:absolute;
+    display:block;
+    text-align:center;
+    top:42%;
+    width:100%;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+}
+#b1_6{
+    background-color:rgba(237, 237, 237,0.5);
+}
+#b1_6cover{
+
+}
+
+#textb1_6{
+    position:absolute;
+    display:block;
+    text-align:center;
+    top:42%;
+    width:100%;
+    font-weight:550;
+    color:white;
+    font-size:35px;
+}
+
+#overlab1_1{
+    opacity:0;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:93%;
+    margin-top:60px;
+    z-index:999;
+    backdrop-filter:blur(15px);
+}
+#content1_1{
+    display:block;
+    opacity:1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:91%;
+    height:87%;
+    margin-left:2%;
+    font-size:25px;
+    background-color:rgba(237, 237, 237,0.5);
+    border-radius:80px;
+    padding:50px;
+}
+
+#xtest1{
+    background-color:white;
+    height:30px;
+    width:280px;
+}
+
+.wikiframes{
+    display:none;
+    z-index:999;
+}
+
+#overlas3{
+    opacity:0;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:93%;
+    margin-top:60px;
+    z-index:999;
+    backdrop-filter:blur(15px);
+}
+#content19_3{
+    overflow-y:auto;
+    display:block;
+    opacity:1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:91%;
+    height:87%;
+    margin-left:2%;
+    font-size:25px;
+    background-color:rgb(104, 143, 115);
+    border-radius:80px;
+    padding:50px;
+}
+
+#xkorzh{
+    width:450px;
+    height:220px;
+}
+#xshmiryov{
+    width:650px;
+    height:350px;
+}
+#xpartzones{
+    width:500px;
+    height:250px;
+}
+#xrels{
+    width:1000px;
+    height:220px;
+}
+
+
+#photo3{
+    position:relative;
+    height:65%;
+    width:35%;
+    margin-left:10px;
+    margin-top:80px;
+    right:50px;
+    float:right;
+    border-radius:10px;
+    background-position:top center;
+    background-size:cover;
+    background-image: url(https://topwar.ru/uploads/posts/2016-07/1469117790_img12.jpg);
+}
+.question{
+    margin-top:150px;
+    display:block;
+    position:absolute;
+    height:60%;
+    width:80%;
+    padding-left:280px;
+    padding-right:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+.option{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    vertical-align: middle;
+    border-radius:50px;
+    height:350px;
+    width:600px;
+    margin:10px;
+    backdrop-filter:blur(30px);
+    background-color:rgba(237, 237, 237,.7);
+}
+
+.textinque{
+    position:inherit;
+    display:block;
+    height:100%;
+    width:100%;
+    font-size:30px;
+    margin-top:25%;
+}

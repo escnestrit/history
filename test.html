@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>К экзамену готов!</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="style.css" rel="stylesheet">
+    </head>
+<body>
+    <div id = "headermain"><a href = "main.html" style = "text-decoration:none"id = "textheadermain">ПОДГОТОВКА К ОБЯЗАТЕЛЬНОМУ ЭКЗАМЕНУ ПО ИСТОРИИ БЕЛАРУСИ. 9 КЛАСС</a></div>
+    <span style = "position:relative; top:80px;margin-left:300px;font-size:40px;font-weight:600;">Вопрос номер 1</span>
+    <div class = "question" id = "q1_1">
+        <div class = "option" right = "true" id = "q1_1a"><span class = "textinque">Правильный ответ</span></div>
+        <div class = "option" id = "q1_1b"><span class = "textinque">Неправильный ответ</span></div>
+    </div>
+</body>
+    <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+    var rightanswers = 0;
+    $(".option").click(function(event){
+        if($(this).attr('right') == "true"){
+            rightanswers+=1;
+            $(".option").css("background-color","red");
+            $(this).css("background-color","green");
+        }
+        else{
+            $(this).parent().children().css("background-color", "red");
+            $("[right=true]").css("background-color", "green");
+        }
+    })
+    </script>
+</html>
