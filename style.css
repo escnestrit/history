@@ -665,8 +665,8 @@ margin-top:5px;}
 
 #photo3{
     position:relative;
-    height:65%;
-    width:35%;
+    height:70%;
+    width:40%;
     margin-left:10px;
     margin-top:80px;
     right:50px;
@@ -740,19 +740,27 @@ margin-top:5px;}
 }
 #photo4{
     position:relative;
-    height:65%;
-    width:35%;
+    height:70%;
+    width:40%;
     margin-left:10px;
     margin-top:80px;
     right:50px;
     float:right;
-    border-radius:10px;
+    border-radius:60px;
     background-position:top center;
     background-size:cover;
-    background-image: url(https://topwar.ru/uploads/posts/2016-07/1469117790_img12.jpg);
+    background-image: url(https://mf.b37mrtl.ru/russian/images/2018.11/original/5be29498370f2c9b7c8b460a.jpg);
 }
 
 #xdivers{
-    height:290px;
+    height:280px;
     width:600px;
+}
+#xpodminsk{
+    height:330px;
+    width:810px;
+}
+#xmassopr{
+    height:240px;
+    width:560px;
 }
