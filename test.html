@@ -6,27 +6,47 @@
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link href="style.css" rel="stylesheet">
     </head>
-<body>
+<body id = "test">
     <div id = "headermain"><a href = "main.html" style = "text-decoration:none"id = "textheadermain">ПОДГОТОВКА К ОБЯЗАТЕЛЬНОМУ ЭКЗАМЕНУ ПО ИСТОРИИ БЕЛАРУСИ. 9 КЛАСС</a></div>
-    <span style = "position:relative; top:80px;margin-left:300px;font-size:40px;font-weight:600;">Вопрос номер 1</span>
+    <div class = "numofque" style = "position:relative; top:80px;margin-left:300px;font-size:40px; width:70%;">Вопрос 1. Дата начала Великой Отечественной войны</div>
     <div class = "question" id = "q1_1">
-        <div class = "option" right = "true" id = "q1_1a"><span class = "textinque">Правильный ответ</span></div>
-        <div class = "option" id = "q1_1b"><span class = "textinque">Неправильный ответ</span></div>
+        <div class = "option" right = "true" id = "q1_1a"><span class = "textinque">22 июня 1941 года</span></div>
+        <div class = "option" id = "q1_1b"><span class = "textinque">1 сентября 1939 года</span></div>
+    </div>
+    <div class = "numofque" style = "position:relative; top:80px;margin-left:300px;font-size:40px; width:70%;">Вопрос 2. Название плана, в котором были изложены главные принципы колонизации и германизации Восточной Европы</div>
+    <div class = "question" id = "q1_2">
+        <div class = "option" right = "true" id = "q1_2a"><span class = "textinque">"Ост"</span></div>
+        <div class = "option" id = "q1_2b"><span class = "textinque">"Барбаросса"</span></div>
     </div>
 </body>
     <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
+    var questions = 5;
     var rightanswers = 0;
+    var current = 1;
+    // var texts = ["Дата начала Великой Отечественной войны", "Название плана, в котором были изложены главные принципы колонизации и германизации Восточной Европы"];
+    // $("#numofque").text("Вопрос "+current+". "+texts[current-1]);
     $(".option").click(function(event){
         if($(this).attr('right') == "true"){
             rightanswers+=1;
-            $(".option").css("background-color","red");
-            $(this).css("background-color","green");
+            $(this).css("color","green");
+            $("#q1_"+current).children().off('click');
         }
         else{
-            $(this).parent().children().css("background-color", "red");
-            $("[right=true]").css("background-color", "green");
+            $(this).css("color", "red");
+            $("#q1_"+current).children().off('click');
         }
+        current++;
     })
+        // setTimeout(function(event){$("#q1_"+current).css("display", "none");current=current+1;
+        //     draw();
+        
+        // },1000);
+    // })
+    // function draw()
+    // {
+    //     $("#q1_"+current).css("display", "block");
+    //     $("#numofque").text("Вопрос "+current+". "+texts[current-1]);
+    // }
     </script>
 </html>
