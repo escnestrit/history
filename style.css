@@ -84,16 +84,21 @@ a:visited{
 .biletsel{
     display:inline-block;
     position:relative;
-    animation: hoverbiletreverse 0.5s;
+    animation: none;
     margin-left:80px;
     margin-top:120px;
     z-index:2;
+    color:gray;
     border-radius:50px;
     background-color:rgba(237, 237, 237,0.5);
     backdrop-filter:blur(30px);
     height:500px;
     width:370px;
     overflow: hidden;
+}
+.biletreadysel{
+    color:black;
+    animation: hoverbiletreverse 0.5s; 
 }
 .textbil{
     position:absolute;
@@ -105,7 +110,7 @@ a:visited{
     font-size:28px;
     font-weight:300;
 }
-.biletsel:hover{
+.biletreadysel:hover{
     z-index:50;
     animation: hoverbilet 0.5s;
     background-color:#baffb0;
