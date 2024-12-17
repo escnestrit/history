@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>К экзамену готов!</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="style.css" rel="stylesheet">
+    </head>
+<body id = "test">
+    <div id = "headermain"><a href = "index.html" style = "text-decoration:none"id = "textheadermain">ПОДГОТОВКА К ОБЯЗАТЕЛЬНОМУ ЭКЗАМЕНУ ПО ИСТОРИИ БЕЛАРУСИ. 9 КЛАСС</a></div>
+    <div class = "numofque" style = "position:relative; top:80px;margin-left:300px;font-size:40px; width:70%;">Вопрос 1</div>
+    <div class = "question" id = "q1_1">
+        <div class = "option" right = "true" id = "q1_1a"><span class = "textinque">Правильный ответ</span></div>
+        <div class = "option" id = "q1_1b"><span class = "textinque">Неправильный ответ</span></div>
+    </div>
+    <div class = "numofque" style = "position:relative; top:80px;margin-left:300px;font-size:40px; width:70%;">Вопрос 2</div>
+    <div class = "question" id = "q1_2">
+        <div class = "option" right = "true" id = "q1_2a"><span class = "textinque">Правильный ответ</span></div>
+        <div class = "option" id = "q1_2b"><span class = "textinque">Неправильный ответ</span></div>
+    </div>
+    <div class = "numofque" style = "position:relative; top:80px;margin-left:300px;font-size:40px; width:70%;">Вопрос 3</div>
+    <div class = "question" id = "q1_3">
+        <div class = "option" id = "q1_3a"><span class = "textinque">Неправильный ответ</span></div>
+        <div class = "option" right = "true"id = "q1_3b"><span class = "textinque">Правильный ответ</span></div>
+    </div>
+    <div class = "numofque" style = "position:relative; top:80px;margin-left:300px;font-size:40px; width:70%;">Вопрос 4</div>
+    <div class = "question" id = "q1_4">
+        <div class = "option" id = "q1_4a"><span class = "textinque">Неправильный ответ</span></div>
+        <div class = "option"  right = "true" id = "q1_4b"><span class = "textinque">Правильный ответ</span></div>
+    </div>
+    <div class = "numofque" style = "position:relative; top:80px;margin-left:300px;font-size:40px; width:70%;">Вопрос 5</div>
+    <div class = "question" id = "q1_5">
+        <div class = "option" right = "true" id = "q1_5a"><span class = "textinque">Правильный ответ</span></div>
+        <div class = "option" id = "q1_5b"><span class = "textinque">Неправильный ответ</span></div>
+        <div id = "toresult" class = "option" style = "width:65%; margin-left:15%; margin-top:6%"><div id = "torestext" style = "margin-top:5.6%; font-size:35px; font-weight: bold;"></div></div>
+    </div>
+
+</body>
+    <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+    var questions = 5;
+    var rightanswers = 0;
+    var current = 1;
+    $("#torestext").text("Правильных ответов: "+rightanswers+" из "+questions+" ("+rightanswers/questions*100+"%)");
+    // var texts = ["Дата начала Великой Отечественной войны", "Название плана, в котором были изложены главные принципы колонизации и германизации Восточной Европы"];
+    // $("#numofque").text("Вопрос "+current+". "+texts[current-1]);
+    $(".question").click(function(event){
+        $("#toresult").css("color", "black");
+    }
+    )
+    $(".option").click(function(event){
+        if($(this).attr('right') == "true"){
+            rightanswers+=1;
+            $("#torestext").text("Правильных ответов: "+rightanswers+" из "+questions+" ("+rightanswers/questions*100+"%)");
+            id = $(this).attr('id');
+            $(this).css("color","green");
+            $("#q1_"+id.slice(3,4)).children().off('click');
+        }
+        else{
+            $(this).css("color", "red");
+            id = $(this).attr('id');
+            $("#q1_"+id.slice(3,4)).children().off('click');
+        }
+        current++;
+    })
+        // setTimeout(function(event){$("#q1_"+current).css("display", "none");current=current+1;
+        //     draw();
+        
+        // },1000);
+    // })
+    // function draw()
+    // {
+    //     $("#q1_"+current).css("display", "block");
+    //     $("#numofque").text("Вопрос "+current+". "+texts[current-1]);
+    // }
+    </script>
+</html>
