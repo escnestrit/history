@@ -93,6 +93,7 @@ a:visited{
     backdrop-filter:blur(30px);
     height:500px;
     width:370px;
+    overflow: hidden;
 }
 .textbil{
     position:absolute;
@@ -766,4 +767,21 @@ margin-top:5px;}
 #xmassopr{
     height:240px;
     width:560px;
+}
+
+
+.totest{
+    display:block;
+    position:absolute;
+    height:45px;
+    width:100%;
+    bottom:0;
+    padding-top:15px;
+    text-align:center;
+    font-size:22px;
+    clip:initial;
+}
+
+.totest:hover{
+    background-color: white;
 }
