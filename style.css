@@ -55,10 +55,10 @@ body{background: radial-gradient(ellipse at top, #7895ff 10%, transparent),
     padding: 0px;
     margin:0px;
 }
-
 a:visited{
     color:black;
 }
+
 #textheadermain{
     display:block;
     text-align:center;
@@ -69,7 +69,6 @@ a:visited{
     background-clip:text;
     -webkit-background-clip:text;
     color:#3658d1;
-
 }
 #headermain{
     display:inherit;
@@ -97,7 +96,6 @@ a:visited{
     overflow: hidden;
 }
 .biletreadysel{
-    color:black;
     animation: hoverbiletreverse 0.5s; 
 }
 .textbil{
@@ -108,9 +106,10 @@ a:visited{
     margin-right:15px;
     line-height:0.3;
     font-size:28px;
-    font-weight:300;
+    font-weight:300; 
 }
 .biletreadysel:hover{
+    color:#3658d1;
     z-index:50;
     animation: hoverbilet 0.5s;
     background-color:#baffb0;
@@ -119,7 +118,6 @@ a:visited{
     top:-20px;
     left:-20px;
     margin-right:-40px;
-    color:#3658d1;
     margin-bottom:-40px;
 }
 div#o25{
@@ -360,6 +358,7 @@ div#s4{
     background-color:rgb(180, 159, 137);
     border-radius:80px;
     padding:50px;
+    overflow-y: auto;
 }
 .close{
     font-size:55px;
@@ -445,6 +444,7 @@ margin-top:5px;}
     background-color:rgb(181, 132, 132);
     border-radius:80px;
     padding:50px;
+    overflow-y: auto;
 }
 #xobor{
     height:310px;
