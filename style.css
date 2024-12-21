@@ -790,3 +790,28 @@ margin-top:5px;}
 .totest:hover{
     background-color: white;
 }
+
+
+.exitwiki{
+    color:darkblue;
+    text-decoration: underline;
+    margin-left:700px;
+}
+.exitwiki:hover{
+    cursor: pointer;
+}
+.wiki:hover{
+    cursor:pointer;
+}
+.wiki{
+    text-decoration:underline;
+}
+
+#bilets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:1;
+    align-items: center;
+    justify-content: space-around;
+}
