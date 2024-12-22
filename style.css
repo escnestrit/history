@@ -44,7 +44,11 @@
         margin-right:0px;
     }
 }
-
+@media screen and (max-width:1050px){
+    #bilets{
+        padding-top:200px;
+    }
+}
 body{background: radial-gradient(ellipse at top, #7895ff 10%, transparent),
             radial-gradient(ellipse at bottom, white 50%, transparent);
     font-family: "Product Sans";
@@ -84,7 +88,7 @@ a:visited{
     display:inline-block;
     position:relative;
     animation: none;
-    margin-left:80px;
+    margin:30px;
     margin-top:120px;
     z-index:2;
     color:gray;
