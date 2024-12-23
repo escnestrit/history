@@ -2,46 +2,53 @@
 @keyframes hoverbilet{
     from{
         background-color:rgba(237, 237, 237,0.5);
-        height:500px;
+        /* height:500px;
         width:370px;
         left:0px;
         top:0px;
         margin-bottom:0px;
-        margin-right:0px;
+        margin-right:0px; */
         color:black;
+        border:none;
+        border-color: none;
     }
     to{
         background-color:#baffb0;
-        height:540px;
+        /* height:540px;
         width:410px;
         left:-20px;
         margin-bottom:-40px;
         top:-20px;
-        margin-right:-40px;
+        margin-right:-40px; */
         color:#3658d1;
-        
+        border:3px;
+        border-color:#3658d1;
     }
 }
 @keyframes hoverbiletreverse{
     from{
         background-color:#baffb0;
-        height:540px;
+        /* height:540px;
         width:410px;
         margin-bottom:-40px;
         left:-20px;
         top:-20px;
-        margin-right:-40px;
+        margin-right:-40px; */
         color:#3658d1;
+        border:3px;
+        border-color:#3658d1;
     }
     to{
         background-color:rgba(237, 237, 237,0.5);
-        height:500px;
+        /* height:500px;
         width:370px;
-        left:0px;
+        left:0px; */
         color:black;
-        margin-bottom:0px;
+        border:none;
+        border-color: none;
+        /* margin-bottom:0px;
         top:0px;
-        margin-right:0px;
+        margin-right:0px; */
     }
 }
 @media screen and (max-width:1050px){
@@ -100,7 +107,8 @@ a:visited{
     overflow: hidden;
 }
 .biletreadysel{
-    animation: hoverbiletreverse 0.5s; 
+    color:black;
+    animation: hoverbiletreverse 1.5s; 
 }
 .textbil{
     position:absolute;
@@ -112,17 +120,17 @@ a:visited{
     font-size:28px;
     font-weight:300; 
 }
+.biletsel:hover{
+    cursor: default;
+}
 .biletreadysel:hover{
     color:#3658d1;
     z-index:50;
     animation: hoverbilet 0.5s;
     background-color:#baffb0;
-    height:540px;
-    width:410px;
-    top:-20px;
-    left:-20px;
-    margin-right:-40px;
-    margin-bottom:-40px;
+    border:3px;
+    border-color:#3658d1;
+    cursor: pointer;
 }
 div#o25{
     margin-bottom:100px;
