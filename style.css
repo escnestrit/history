@@ -136,6 +136,12 @@ div#o25{
     margin-bottom:100px;
 }
 
+.tomain{
+    position:absolute;
+    top:6%;
+    left:1%;
+    font-size:25px;
+}
 /*div#t2{
     top:100px;
 }
@@ -228,7 +234,7 @@ div#t25{
 
 #bilname{
 position:relative;
-top:80px;
+top:90px;
 margin-left:80px;
 font-size:40px;
 font-style:italic;
